@@ -1,0 +1,25 @@
+<ion-view title="Alert Details">
+    <ion-content class="has-header">
+        <div class="alert-detail">
+            <h2><span class="icon ion-flag flag"
+                      ng-class="getAlertFlagCssClass(alert.alertDefinition.priority)"></span> {{alert.name}}</h2>
+
+            <p><span class="label">Resource</span><br>
+                <span class="icon" ng-class="getAvailabilityCssClasses(alert.resource.availability)"></span>
+                {{alert.resource.resourceName}}</p>
+
+            <p><span class="label">Type</span><br>
+                {{alert.resource.typeName}}, {{alert.resource.pluginName}} plugin</p>
+
+            <p><span class="label">Fired on</span><br>
+                {{alert.alertTime | amDateFormat:'dddd, MMMM Do YYYY, h:mm:ss a UTCZ'}}</p>
+
+            <p><span class="label">Description</span><br>
+            <pre>{{alert.description}}</pre>
+            </p>
+
+            <button class="button button-block button-energized">Acknowledge</button>
+            <button class="button button-block button-calm" ng-click="backToList()">Back</button>
+        </div>
+    </ion-content>
+</ion-view>

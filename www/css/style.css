@@ -1,0 +1,49 @@
+div.alert-item {
+
+}
+
+div.alert-item span.primary {
+    font-weight: bold;
+}
+
+div.alert-item span.secondary {
+    color: lightgrey;
+    font-size: 0.8em;
+}
+
+div.alert-item span.flag {
+    margin-right: 1em;
+}
+div.alert-item span.moment {
+    float: right;
+}
+
+div.alert-detail {
+    padding: 1em;
+}
+
+div.alert-detail span.avail-up {
+    color: green;
+}
+
+div.alert-detail span.avail-down {
+    color: red;
+}
+
+div.alert-detail span.avail-unknown {
+    color: lightgrey;
+}
+
+div.alert-detail span.label {
+    font-weight: bold;
+}
+
+div.alert-detail pre {
+    border: 1px solid lightgrey;
+    padding: 0.5em;
+    font-style: italic;
+}
+
+div.alert-detail button:first-of-type {
+    margin: 2em 0 0;
+}

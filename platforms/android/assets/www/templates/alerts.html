@@ -1,0 +1,25 @@
+<ion-view title="RHQ Alerts">
+
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+
+    <ion-content class="has-header">
+        <ion-refresher on-refresh="doRefresh()"
+                       pulling-text="Pull to refresh..."
+                       refreshing-text="Refreshing!"
+                       refreshing-icon="ion-loading-c">
+        </ion-refresher>
+        <ion-list>
+            <ion-item ng-repeat="alert in alerts" href="#/app/alerts/{{alert.id}}">
+                <div class="alert-item">
+                    <span class="secondary moment" am-time-ago="alert.alertTime">moments ago</span>
+                    <span class="icon ion-flag flag" ng-class="getAlertFlagCssClass(alert.alertDefinition.priority)"></span>
+                    <span class="primary">{{alert.name}}</span><br>
+                    <span class="secondary">Resource: {{alert.resource.resourceName}} ({{alert.resource.typeName}}, {{alert.resource.pluginName}} plugin)</span>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+
+</ion-view>
