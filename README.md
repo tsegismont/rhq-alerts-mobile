@@ -2,7 +2,7 @@
 
 RHQ Alerts Mobile is an Ionic/Cordova based application which gives RHQ users the list of unacknowledged alerts (much like the recent alert portlets does).
 
-When a user touch an alert item, he gets the details and may acknowledge the alert.
+When a user touches an alert item, he gets the details and may acknowledge the alert.
 
 ##Done
 * [X] Screen design with data mocking (see screenshots below)
@@ -15,7 +15,7 @@ When a user touch an alert item, he gets the details and may acknowledge the ale
 
 ##Screenshots
 
-Please pay no attention to the bad english in text, this is just mock data after all! 
+Please pay no attention to the bad english in texts, this is just mock data after all! 
 
 ###RHQ Alerts app
 ![RHQ Alerts app](https://raw.githubusercontent.com/tsegismont/rhq-alerts-mobile/master/screenshots/Screenshot_2014-06-05-09-25-08.png "RHQ Alerts app")
