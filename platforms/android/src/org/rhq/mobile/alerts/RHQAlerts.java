@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.ionicframework.starter;
+package org.rhq.mobile.alerts;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
